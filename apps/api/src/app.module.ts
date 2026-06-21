@@ -21,6 +21,7 @@ import { StellarExplainabilityModule } from './explainability/routes/stellar/exp
 import { Transaction } from './transactions/entities/transaction.entity';
 import { WalletSession } from './wallet/entities/wallet-session.entity';
 import { RecommendationV2Module } from './api/routes/v2/recommendation.module';
+import { IntelligenceHubModule } from './intelligence-hub/stellar/intelligence-hub.module';
 
 @Module({
   imports: [
@@ -54,6 +55,7 @@ import { RecommendationV2Module } from './api/routes/v2/recommendation.module';
     SorobanContractModule,
     StellarTimeoutModule,
     RecommendationV2Module,
+    IntelligenceHubModule,
     ThrottlerModule.forRoot([
       {
         ttl: 60000,
